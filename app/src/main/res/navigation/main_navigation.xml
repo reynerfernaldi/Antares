@@ -83,6 +83,12 @@
         <action
             android:id="@+id/action_trackerFragment_to_dashboardFragment"
             app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_trackerFragment_to_addBeaconFragment"
+            app:destination="@id/addBeaconFragment" />
+        <action
+            android:id="@+id/action_trackerFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
     </fragment>
     <fragment
         android:id="@+id/mapsFragment"

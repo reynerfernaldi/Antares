@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Antares</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="best_price_deals"><![CDATA[Best Price &\nDeals]]></string>
+    <string name="description_best_price">Find your favorite Meals at the best prices with exclusive deals only on aliments app.</string>
+    <string name="login">Login Account</string>
+    <string name="welcome">Hello, welcome to Antares!</string>
+    <string name="register">Register Account</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="warning_login">Check your inbox for the login confirmation link</string>
+    <string name="email_id">Email ID</string>
+    <string name="password">Password</string>
+    <string name="or">OR</string>
+    <string name="btn_login">Login</string>
+    <string name="login_google">Login with Google</string>
+    <string name="not_register">Not Registered yet?</string>
+    <string name="create_account">Create an Account</string>
+    <string name="btn_register">Register</string>
+    <string name="already_account">Already had an account?</string>
+    <string name="login_account">Login</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="hi">Hi, Reyner</string>
+    <string name="live_tracking">Live Tracking</string>
+    <string name="status_tracking">Tracker Offline in 3 days (1/4)</string>
+    <string name="tracker">Tracker</string>
+    <string name="depo">Depo</string>
+    <string name="report">Asset Report</string>
+    <string name="home">Home</string>
+    <string name="filter">Filter</string>
+    <string name="heading_cv_tracker">Name: ICBU 249506-1</string>
+    <string name="last_location">Last Location: -7.1841758709164, 112.6913662781</string>
+    <string name="last_place">Last Place: OUT (Surabaya, East Java, Indonesia)</string>
+    <string name="battery">Battery: 100%</string>
+    <string name="last_update">Last Update: 2 months ago</string>
+    <string name="status">Status : Online</string>
+    <string name="search">Search</string>
+    <string name="heading_cv_depo">Name: Depo Tanjung Priok</string>
+    <string name="major">Major: 111</string>
+    <string name="minor">Minor: 105</string>
+    <string name="latitude">Latitude: -6, 114737</string>
+    <string name="longitude">Longitude: 106, 875210</string>
+    <string name="location">Location Name: Daerah Mekanik Kontainer</string>
+    <string name="last_data">Last Data(Update): 15/05/2023 19:45:00</string>
+    <string name="container_inside">Container inside: </string>
+    <string name="profile">Profile</string>
+    <string name="akun_name">Reyner Swift</string>
+    <string name="logout">Logout</string>
+    <string name="user"><u>Admin</u></string>
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+
+    <string-array name="Status">
+        <item>Online</item>
+        <item>Offline</item>
+        <item>Offline more than 3 days</item>
+        <item>Offline more than 7 days</item>
+        <item>Offline more than 30 days</item>
+    </string-array>
+    <string-array name="Location">
+        <item>Surabaya</item>
+        <item>Jakarta</item>
+    </string-array>
+</resources>

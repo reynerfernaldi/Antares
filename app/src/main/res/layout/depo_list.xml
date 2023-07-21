@@ -4,8 +4,8 @@
 
     <data>
         <variable
-            name="dataTracker"
-            type="com.telkom.antares.data.dao.tracker.TrackerData" />
+            name="dataDepo"
+            type="com.telkom.antares.data.dao.depo.DepoData" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -41,7 +41,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/inter_semibold"
-                        android:text='@{dataTracker.name, default= "Name: Depo Tanjung Priok"}'
+                        android:text='@{dataDepo.name, default= "Name: Depo Tanjung Priok"}'
                         android:textColor="@color/black"
                         android:textSize="14sp" />
 
@@ -49,7 +49,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/inter"
-                        android:text='@{dataTracker.major, default= "Major: 111"}'
+                        android:text='@{dataDepo.major, default= "Major: 111"}'
                         android:textColor="@color/black"
                         android:textSize="14sp" />
 
@@ -57,7 +57,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/inter"
-                        android:text='@{dataTracker.minor, default= "Minor: 105"}'
+                        android:text='@{dataDepo.minor, default= "Minor: 105"}'
                         android:textColor="@color/black"
                         android:textSize="14sp" />
 
@@ -65,7 +65,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/inter"
-                        android:text='@{dataTracker.latitude, default= "Latitude: -6,114737"}'
+                        android:text='@{dataDepo.latitude, default= "Latitude: -6,114737"}'
                         android:textColor="@color/black"
                         android:textSize="14sp" />
 
@@ -73,7 +73,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/inter"
-                        android:text='@{dataTracker.longitude, default= "Longitude: 106,875210"}'
+                        android:text='@{dataDepo.longitude, default= "Longitude: 106,875210"}'
                         android:textColor="@color/black"
                         android:textSize="14sp" />
 
@@ -81,7 +81,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/inter"
-                        android:text='@{dataTracker.location, default= "Location Name: Daerah Mekanik Kontainer"}'
+                        android:text='@{dataDepo.location, default= "Location Name: Daerah Mekanik Kontainer"}'
                         android:textColor="@color/black"
                         android:textSize="14sp" />
 
@@ -89,7 +89,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/inter"
-                        android:text='@{dataTracker.lastdata, default= "Last Data(Update): 15/05/2023 19:45:00"}'
+                        android:text='@{dataDepo.lastdata, default= "Last Data(Update): 15/05/2023 19:45:00"}'
                         android:textColor="@color/black"
                         android:textSize="14sp" />
 

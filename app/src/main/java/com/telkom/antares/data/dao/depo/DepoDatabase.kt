@@ -1,4 +1,4 @@
-package com.telkom.antares.data.dao
+package com.telkom.antares.data.dao.depo
 
 import android.content.Context
 import androidx.room.Database
@@ -6,24 +6,24 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 
 @Database( entities = [
-    TrackerData::class],
+    DepoData::class],
     version = 1 )
-abstract class TrackerDatabase : RoomDatabase() {
+abstract class DepoDatabase : RoomDatabase() {
 
-    abstract fun trackerDao() : TrackerDao
+    abstract fun DepoDao() : DepoDao
 
     companion object{
 
         @Volatile
-        private var INSTANCE : TrackerDatabase? = null
+        private var INSTANCE : DepoDatabase? = null
 
-        fun getInstance(context : Context): TrackerDatabase? {
+        fun getInstance(context : Context): DepoDatabase? {
             if (INSTANCE == null){
                 synchronized(this){
                     INSTANCE = Room.databaseBuilder(
                         context.applicationContext,
-                        TrackerDatabase::class.java,
-                        "tracker_app.db"
+                        DepoDatabase::class.java,
+                        "Depo_app.db"
                     ).build()
                 }
             }

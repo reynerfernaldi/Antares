@@ -89,6 +89,9 @@
         <action
             android:id="@+id/action_trackerFragment_to_mapsFragment"
             app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_trackerFragment_to_addTrackerFragment"
+            app:destination="@id/addTrackerFragment" />
     </fragment>
     <fragment
         android:id="@+id/mapsFragment"
@@ -125,4 +128,9 @@
             android:id="@+id/action_addBeaconFragment_to_depoFragment"
             app:destination="@id/depoFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/addTrackerFragment"
+        android:name="com.telkom.antares.ui.AddTrackerFragment"
+        android:label="fragment_add_tracker"
+        tools:layout="@layout/fragment_add_tracker" />
 </navigation>

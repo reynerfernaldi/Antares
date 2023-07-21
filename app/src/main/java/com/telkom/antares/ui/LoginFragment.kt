@@ -45,6 +45,7 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         loginChoose()
         binding.btnlogin.setOnClickListener {
+            viewModel.setIsLogin(true)
             findNavController().navigate(R.id.action_loginFragment_to_dashboardFragment)
         }
 

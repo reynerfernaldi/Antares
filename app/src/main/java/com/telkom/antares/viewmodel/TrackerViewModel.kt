@@ -2,9 +2,9 @@ package com.telkom.antares.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.*
-import com.telkom.antares.data.dao.TrackerData
-import com.telkom.antares.data.dao.TrackerDatabase
-import com.telkom.antares.data.dao.TrackerRepository
+import com.telkom.antares.data.dao.tracker.TrackerData
+import com.telkom.antares.data.dao.tracker.TrackerDatabase
+import com.telkom.antares.data.dao.tracker.TrackerRepository
 import kotlinx.coroutines.launch
 
 class TrackerViewModel(application: Application) : AndroidViewModel(application) {

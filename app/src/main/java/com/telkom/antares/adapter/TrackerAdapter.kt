@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.telkom.antares.data.dao.TrackerData
+import com.telkom.antares.data.dao.tracker.TrackerData
 import com.telkom.antares.databinding.TrackerListBinding
 
 class TrackerAdapter(private var onClick : TrackerAdapter.TrackersInterface) : RecyclerView.Adapter<TrackerAdapter.ViewHolder>() {

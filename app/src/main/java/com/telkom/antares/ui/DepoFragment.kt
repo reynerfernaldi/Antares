@@ -10,16 +10,16 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.telkom.antares.R
-import com.telkom.antares.adapter.TrackerAdapter
-import com.telkom.antares.data.dao.TrackerData
+import com.telkom.antares.adapter.DepoAdapter
+import com.telkom.antares.data.dao.depo.DepoData
 import com.telkom.antares.databinding.FragmentDepoBinding
-import com.telkom.antares.viewmodel.TrackerViewModel
+import com.telkom.antares.viewmodel.DepoViewModel
 
-class DepoFragment : Fragment(), TrackerAdapter.TrackersInterface {
+class DepoFragment : Fragment(), DepoAdapter.DeposInterface {
     private var _binding: FragmentDepoBinding? = null
     private val binding get() = _binding!!
-    private val viewModel : TrackerViewModel by viewModels()
-    private lateinit var adapter : TrackerAdapter
+    private val viewModel : DepoViewModel by viewModels()
+    private lateinit var adapter : DepoAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,7 +33,7 @@ class DepoFragment : Fragment(), TrackerAdapter.TrackersInterface {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        adapter = TrackerAdapter(this)
+        adapter = DepoAdapter(this)
         dataEmpty()
 
         val status = resources.getStringArray(R.array.Status)
@@ -65,14 +65,14 @@ class DepoFragment : Fragment(), TrackerAdapter.TrackersInterface {
     }
     private fun dataEmpty() {
         binding.apply {
-            viewModel.getDataTrackers().observe(viewLifecycleOwner) {
+            viewModel.getDataDepos().observe(viewLifecycleOwner) {
                 adapter.setData(it)
             }
             rvDepo.adapter = adapter
             rvDepo.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         }
     }
-    override fun detailTracker(Trackers: TrackerData) {
+    override fun detailDepo(Depos: DepoData) {
         findNavController().navigate(R.id.action_depoFragment_to_mapsFragment)
     }
 }

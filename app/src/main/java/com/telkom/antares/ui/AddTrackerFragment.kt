@@ -7,23 +7,21 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
-import com.telkom.antares.data.dao.depo.DepoData
 import com.telkom.antares.data.dao.tracker.TrackerData
-import com.telkom.antares.databinding.FragmentAddBeaconBinding
-import com.telkom.antares.viewmodel.DepoViewModel
+import com.telkom.antares.databinding.FragmentAddTrackerBinding
 import com.telkom.antares.viewmodel.TrackerViewModel
 
-class AddBeaconFragment : Fragment() {
-    private var _binding: FragmentAddBeaconBinding? = null
+class AddTrackerFragment : Fragment() {
+    private var _binding: FragmentAddTrackerBinding? = null
     private val binding get() = _binding!!
-    private val viewModelDepo : DepoViewModel by viewModels()
+    private val viewModelTracker : TrackerViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentAddBeaconBinding.inflate(inflater, container, false)
+        _binding = FragmentAddTrackerBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -39,8 +37,8 @@ class AddBeaconFragment : Fragment() {
                 val uuid = uuid.text.toString()
                 val latitude = latitude.text.toString()
                 val longitude = longitude.text.toString()
-                viewModelDepo.addDepo(
-                    DepoData(id_depo = 0, name = name,
+                viewModelTracker.addTracker(
+                    TrackerData(id_tracker = 0, name = name,
                         location = location, major = major, minor = minor, lastdata = uuid,
                         latitude = latitude, longitude = longitude)
                 )

@@ -49,6 +49,11 @@ class ProfileFragment : Fragment() {
             binding.email.setText(it.toString())
         }
 
+        binding.logout.setOnClickListener{
+            userViewModel.setIsLogin(false)
+            findNavController().navigate(R.id.action_profileFragment_to_loginFragment)
+        }
+
         binding.btnEdit.setOnClickListener{
             findNavController().navigate(R.id.action_profileFragment_to_editProfileFragment)
         }

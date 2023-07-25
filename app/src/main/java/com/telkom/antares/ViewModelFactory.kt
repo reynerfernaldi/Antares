@@ -7,6 +7,7 @@ import com.telkom.antares.data.DataUserManager
 import com.telkom.antares.viewmodel.UserViewModel
 import java.lang.IllegalArgumentException
 
+
 class ViewModelFactory(private val pref: DataUserManager) : ViewModelProvider.NewInstanceFactory() {
     @Suppress("UNCHECKED_CAST")
     private lateinit var application: Application
